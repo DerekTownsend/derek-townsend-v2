@@ -1,5 +1,6 @@
     /* link has to be in this order*/
       
+      
        a:link{ 
            color:blue;
            font-weight:bold;
@@ -20,13 +21,20 @@
            
        }
        
-       .nav { 
+       .nav, 
+       .navbar-default,
+       .navbar-fixed-top,
+       .navbar-header,
+       .container-fluid,
+       .navbar-brand
+       { 
            list-style-type:none;
+           background-color:lightblue;
+           font-size:24px;
        }
        
        .nav li{
            margin: 5px;
-           display:inline-block;
            
        }
        
@@ -37,7 +45,7 @@
            border-style:solid;
        }
        .nav a:hover {
-           padding: 5px;
+           padding: 10px;
            background-color:lightyellow;
            border-width:5px;
            border-style:dashed;
@@ -53,10 +61,18 @@
             text-align:center;
             -webkit-text-stroke: 2px black;
         }    
-        h1,h2 { 
+       
+        h1,
+        h2,
+        p,
+        blockquote,
+        ol,
+        ul
+        { 
+            font-size:24px;
             color: lightblue; 
             font-style: italic;
-            -webkit-text-stroke: 5px black;
+            -webkit-text-stroke: 1px white;
            text-shadow:
            4px 4px 0 #000,
           -1px -1px 0 #000,  
@@ -68,3 +84,8 @@
         img {
             height: 250px;
         }
+        .jumbotron { 
+            min-height: 950px; 
+            
+        }
+    
